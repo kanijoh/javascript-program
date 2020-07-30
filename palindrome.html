@@ -1,0 +1,23 @@
+<html>
+<body>
+<script type="text/javascript">
+  function Palindrome() {
+   var revStr = "";
+   var str = document.getElementById("str").value;
+   var i = str.length;
+   for(var j=i; j>=0; j--) {
+      revStr = revStr+str.charAt(j);
+   }
+   if(str == revStr) {
+      alert(str+" is a Palindrome");
+   } else {
+      alert(str+" is not a Palindrome");
+   }
+}
+</script>
+<form >
+  Enter a string or number: <input type="text" id="str" name="string" /><br />
+  <input type="submit" value="verify" onclick="Palindrome();"/>
+</form>
+</body>
+</html>
